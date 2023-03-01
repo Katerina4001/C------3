@@ -6,31 +6,32 @@
 
 /*Console.WriteLine("Введите размер массива:  ");
 int size = Convert.ToInt32(Console.ReadLine());
-int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
+
+int[] num = new int[size];
+FillArrayRandomNumbers(num);
 Console.WriteLine(" получившийся массив: ");
-PrintArray(numbers);
+PrintArray(num);
 int count = 0;
 
-for (int z = 0; z < numbers.Length; z++)
-if (numbers[z] % 2 == 0)
+for (int z = 0; z < num.Length; z++)
+if (num[z] % 2 == 0)
 count++;
 
-Console.WriteLine($"всего {numbers.Length} чисел, {count} из них чётные");
+Console.WriteLine($"всего {num.Length} чисел, {count} из них чётные");
 
-void FillArrayRandomNumbers(int[] numbers)
+void FillArrayRandomNumbers(int[] num)
 {
-    for(int i = 0; i < numbers.Length; i++)
+    for(int i = 0; i < num.Length; i++)
     {
-        numbers[i] = new Random().Next(100,1000);
+        num[i] = new Random().Next(100,1000);
     }
 }
-void PrintArray(int[] numbers)
+void PrintArray(int[] num)
 {
     Console.Write("[ ");
-    for(int i = 0; i < numbers.Length; i++)
+    for(int i = 0; i < num.Length; i++)
     {
-        Console.Write(numbers[i] + " ");
+        Console.Write(num[i] + " ");
     }
     Console.Write("]");
     Console.WriteLine();
@@ -38,33 +39,34 @@ void PrintArray(int[] numbers)
 */
 
 /*Задача. Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечетных позициях.*/
-
-/* Console.WriteLine("Введите  массив  ");
+/*
+ Console.WriteLine("Введите  массив  ");
 int size = Convert.ToInt32(Console.ReadLine());
-int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
+
+int[] num = new int[size];
+FillArrayRandomNumbers(num);
 Console.WriteLine("массив: ");
-PrintArray(numbers);
+PrintArray(num);
 int sum = 0;
 
-for (int z = 0; z < numbers.Length; z+=2)
-    sum = sum + numbers[z];
+for (int z = 0; z < num.Length; z+=2)
+    sum = sum + num[z];
 
-    Console.WriteLine($"всего {numbers.Length} чисел, сумма элементов  на нечётных позициях = {sum}");
+    Console.WriteLine($"всего {num.Length} чисел, сумма элементов  на нечётных позициях = {sum}");
 
-void FillArrayRandomNumbers(int[] numbers)
+void FillArrayRandomNumbers(int[] num)
 {
-    for(int i = 0; i < numbers.Length; i++)
+    for(int i = 0; i < num.Length; i++)
         {
-            numbers[i] = new Random().Next(1,10);
+            num[i] = new Random().Next(1,10);
         }
 }
-void PrintArray(int[] numbers)
+void PrintArray(int[] num)
 {
     Console.Write("[ ");
-    for(int i = 0; i < numbers.Length; i++)
+    for(int i = 0; i < num.Length; i++)
         {
-            Console.Write(numbers[i] + " ");
+            Console.Write(num[i] + " ");
         }
     Console.Write("]");
     Console.WriteLine();
@@ -72,24 +74,24 @@ void PrintArray(int[] numbers)
 */
 
 /*Задача. Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива*/
+/*
+int size = 8;
+int[] num = new int[size];
+FillArrayRandomNumbers(num);
+PrintArray(num);
 
-/*int size = 8;
-int[] numbers = new int[size];
-FillArrayRandomNumbers(numbers);
-PrintArray(numbers);
+int max = num[0];
+int min = num[0];
 
-int max = numbers[0];
-int min = numbers[0];
-
-for (int i = 0; i < numbers.Length; i++)
+for (int i = 0; i < num.Length; i++)
 {
-    if (numbers[i] > max)
+    if (num[i] > max)
     {
-        max = numbers[i];
+        max = num[i];
     }
-    else if (numbers[i] < min)
+    else if (num[i] < min)
     {
-        min = numbers[i];
+        min = num[i];
     }
 }
 
