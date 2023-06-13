@@ -1,8 +1,8 @@
-'use strict';
+function Grettings() {
+    let name = prompt('Как вас зовут?');
+    msg = `Привет, ${name}!!`
+    alert(msg)
+};
 
-function greeting(name) {
-    console.log(`Здравствуйте ${name}!!`);
-}
-
-const nameH = prompt('Введите имя ');
-greeting(nameH);
+Grettings();
+console.log(msg);
