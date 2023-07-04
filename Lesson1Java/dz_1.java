@@ -4,7 +4,7 @@ import java.util.Scanner;
 // 1) Вычислить n-ое треугольного число (сумма чисел от 1 до n),
 // n! (произведение чисел от 1 до n)
 
-public class num1 {
+public class lesson2Java {
     public static void main(String[] args) {
         System.out.printf("Введите  n: ");
         Scanner num = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class num1 {
 
 // 2) Вывести все простые числа от 1 до 1000
 
-public class num2 {
+public class lesson2Java {
     public static void main(String[] args) {
         for (int i = 1; i <= 1001; i++) {    
             boolean isPrime = true;  
@@ -42,7 +42,7 @@ public class num2 {
 
 // 3) Реализовать простой калькулятор
 
-public class num3 {
+public class lesson2Java {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         
