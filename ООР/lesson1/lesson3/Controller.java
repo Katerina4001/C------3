@@ -1,4 +1,4 @@
-package group4386.gerasimava;
+package group4386.gerasimava.lesson3;
 
 public class Controller {
     private StudentGroupService studentGroupService;

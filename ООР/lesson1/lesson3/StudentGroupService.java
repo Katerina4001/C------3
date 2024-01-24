@@ -1,4 +1,4 @@
-package group4386.gerasimava;
+package group4386.gerasimava.lesson3;
 
 import java.util.Collections;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package group4386.gerasimava;
+package group4386.gerasimava.lesson3;
 
 public class Student implements Comparable<Student>{
     private Integer studentId;
