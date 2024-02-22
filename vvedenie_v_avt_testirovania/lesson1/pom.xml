@@ -1,3 +1,5 @@
+//А что с pom файлом ?
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
